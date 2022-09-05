@@ -1,0 +1,11 @@
+$pink-color-gradient:  linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);;
+$main-gradient:  linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$pink: #F0145A;
+$font-blue:  #24A3FF;
+$font-grey: #686887;
+$main-conteiner: 1440px;
+@mixin font ($num, $weight) {
+    font-family: 'TT Norms';
+    font-size: $num;
+    font-weight: $weight;
+}
