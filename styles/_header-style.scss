@@ -87,7 +87,11 @@ menu li{
 
 
 
-
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
 .header-flex{
     display: flex;
     justify-content: space-between;
@@ -96,7 +100,7 @@ menu li{
     display: flex;
 }
 .logo-header{
-    padding: 50px 0px;
+    margin: 50px 0px;
 }
 .header-info{
     padding: 55px 0px 10px 0px;
@@ -114,6 +118,7 @@ menu li{
 .header-margin-left{
     margin-left: 15px;
 }
+
 .header-number{
     padding: 0px 20px;
     position: relative;
@@ -128,7 +133,7 @@ menu li{
         border-radius: 50%;
         background: #fff;
         position: absolute;
-        left: 177px;
+        left: 185px;
         top: 7px;
     }
     &::before{
@@ -172,4 +177,5 @@ a {
 }
 .facebook-img-header{
     margin-bottom: 3px;
+    display: inline-block;
 }
