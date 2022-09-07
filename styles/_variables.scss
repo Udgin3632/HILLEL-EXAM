@@ -2,6 +2,7 @@ $pink-color-gradient:  linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 $main-gradient:  linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 $background-color:  linear-gradient(35.01deg, #323264 14.33%, #323264 82.39%, #5c3b60 100%);
 $background-color-3: linear-gradient(200deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$background-grey: #F5F5FA;
 $pink: #F0145A;
 $font-blue:  #24A3FF;
 $font-grey: #686887;
@@ -11,3 +12,9 @@ $main-conteiner: 1320px;
     font-size: $num;
     font-weight: $weight;
 }
+@mixin img-background ($background){
+    width: 25%;
+    height: 120px;
+    background: $background;
+}
+ 
