@@ -23,7 +23,7 @@
 
                     <div>
                         <div class="flex header-info">
-                            <div>
+                            <div class="lang-block">
                                 <a onclick="return false" class="language active-lang" href="#">УК</a>
                                 <a onclick="return false" class="language" href="#">РУ</a>
                                 <a onclick="return false" class="language" href="#">EN</a>
@@ -31,7 +31,7 @@
                             <div class="header-margin-left flex">
                                 <a onclick="return false" class="address-header" href="#">Одеса, Адміральський пр.,
                                     3</a>
-                                <div>
+                                <div class="number-block"> 
                                     <a onclick="return false" class="header-number" href="tel:+38 (050) 390 15 91">+38
                                         (050) 390 15 91</a>
                                 </div>
@@ -39,6 +39,19 @@
                             </div>
                         </div>
                         <nav>
+                            <div class="menu-burger">
+                                <input type="checkbox">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <ul class="menu">
+                                    <li class="li-burger"><a class="burger-text-link" href="#">о нас</a></li>
+                                    <li class="li-burger"><a href="#">послуги</a></li>
+                                    <li class="li-burger"><a href="#">команда</a></li>
+                                    <li class="li-burger"><a href="#">публікації</a></li>
+                                    <li class="li-burger"><a href="#">контакти</a></li>
+                                </ul>
+                            </div>
                             <ul class="flex-end">
                                 <li class="list-padding list-style"><a href="#">о нас</a></li>
                                 <li class="list-padding list-style"><a href="#">послуги</a></li>
@@ -52,18 +65,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="menu-burger">
-            <input type="checkbox">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-            <ul class="menu">
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">home</a></li>
-            </ul>
-        </div> -->
+
     </nav>
 
 
@@ -81,8 +83,8 @@
 
     <section class="background">
         <div class="flex-center padding-top">
-            <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="d-flex flex-drctn align-items-start">
+                <div class="nav nav-center flex-column flex-r nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                         aria-selected="true">Послідовні</button>
@@ -99,6 +101,7 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                         aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <p class="adaptive-head-text">Послідовні</p>
                         <h1 class="text-header-caruesel-bold"> Перевертаємо уявлення про юридичні <br> послуги</h1>
                         <p class="text-header-caruesel">Консолідуючи багаторічний досвід і практику, юристи <br>
                             компанії супроводжують складні проекти і досягають <br> прийняття ряду важливих для галузі
@@ -106,6 +109,7 @@
                     </div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                         aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <p class="adaptive-head-text">Клієнтоорієнтовані</p>
                         <h1 class="text-header-caruesel-bold"> Перевертаємо уявлення про юридичні <br> послуги</h1>
                         <p class="text-header-caruesel">Консолідуючи багаторічний досвід і практику, юристи <br>
                             компанії супроводжують складні проекти і досягають <br> прийняття ряду важливих для галузі
@@ -113,6 +117,7 @@
                     </div>
                     <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
                         aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                        <p class="adaptive-head-text">Інноваційні</p>
                         <h1 class="text-header-caruesel-bold"> Перевертаємо уявлення про юридичні <br> послуги</h1>
                         <p class="text-header-caruesel">Консолідуючи багаторічний досвід і практику, юристи <br>
                             компанії супроводжують складні проекти і досягають <br> прийняття ряду важливих для галузі
@@ -120,6 +125,7 @@
                     </div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                         aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <p class="adaptive-head-text">Інноваційні</p>
                         <h1 class="text-header-caruesel-bold"> Перевертаємо уявлення про юридичні <br> послуги</h1>
                         <p class="text-header-caruesel">Консолідуючи багаторічний досвід і практику, юристи <br>
                             компанії супроводжують складні проекти і досягають <br> прийняття ряду важливих для галузі
@@ -127,6 +133,8 @@
                     </div>
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                         aria-labelledby="v-pills-settings-tab" tabindex="0">
+                        <p class="adaptive-head-text">Бізнес-орієнтовані
+                            юристи</p>
                         <h1 class="text-header-caruesel-bold"> Перевертаємо уявлення про юридичні <br> послуги</h1>
                         <p class="text-header-caruesel">Консолідуючи багаторічний досвід і практику, юристи <br>
                             компанії супроводжують складні проекти і досягають <br> прийняття ряду важливих для галузі
@@ -146,7 +154,7 @@
 
             <div class="box-wrap-1">
 
-                <div class="box">
+                <div class="box box-1">
                     <div class="box-card">
                         <a onclick="return false" href="#">
                             <img src="./img/Icon.png" alt="">
@@ -161,7 +169,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box box-1">
                     <div class="box-card">
                         <a onclick="return false" href="#">
                             <img src="./img/Icon-2.png" alt="">
@@ -175,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box box-1">
                     <div class="box-card">
                         <a onclick="return false" href="#">
                             <img src="./img/Icon-3.png" alt="">
@@ -188,7 +196,7 @@
                 </div>
             </div>
             <div class="box-wrap-2">
-                <div class="box">
+                <div class="box box-1">
                     <div class="box-card">
                         <a onclick="return false" href="#">
                             <img src="./img/Icon-4.png" alt="">
@@ -202,7 +210,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box box-1">
                     <div class="box-card">
                         <a onclick="return false" href="#">
                             <img src="./img/Icon-5.png" alt="">
@@ -216,7 +224,7 @@
                     </div>
                 </div>
 
-                <div class="box">
+                <div class="box box-1">
                     <div class="box-card">
                         <a onclick="return false" href="#">
                             <img src="./img/Icon-6.png" alt="">
@@ -246,19 +254,21 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="flex">
-                            <img src="./img/image.png" alt="">
+                            
                             <div class="carousel-page1">
+                                <img class="portret" src="./img/image.png" alt="">
                                 <div class="carousel-part-1">
                                     <a onclick="return false" class="team-link-carousel" href="#">команда</a>
                                     <h1 class="quote-team-carousel">Ми звикли брати на себе <br> відповідальність та
                                         завжди
                                         гарантуємо <br> чесну, вчасну допомогу, навіть у <br> ситуаціях, коли більшість
                                         безсилі.</h1>
+                                        <div class="carousel-part-2">
+                                            <p class="name-carousel">Олександр Олександровський</p>
+                                            <p class="carousel-job-title">Керуючий партнер</p>
+                                        </div>
                                 </div>
-                                <div class="carousel-part-2">
-                                    <p class="name-carousel">Олександр Олександровський</p>
-                                    <p class="carousel-job-title">Керуючий партнер</p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -491,11 +501,11 @@
         <div class="conteiner">
             <div class="footer_flex footer-border">
                 <div>
-                    <div class="flex flex-footer-center footer-padding">
+                    <div class="flex-2 flex-footer-center footer-padding">
                         <p class="footer-text">Одеса, Адміральський пр., 3</p>
                         <a onclick="return false" class="footer-link spacing" href="#">Подивитися на мапі</a>
                     </div>
-                    <div class="flex flex-footer-center footer-padding-bottom">
+                    <div class="flex-2 flex-footer-center footer-padding-bottom">
                         <a class="footer-img" href="#"><img src="./img/Vector_face.svg" alt=""></a>
                         <p class="footer-number dot dot-fix"> +38 (050) 390 15 91</p>
                         <a onclick="return false" class="footer-link dot"

@@ -16,6 +16,9 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 750px){
+        display: none;
+    }
 }
 .background-img-2{
     margin: 0;
@@ -24,6 +27,9 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 600px){
+        width: 80%;
+    }
 }
 .gradient-background-2{
     background:  linear-gradient(50.01deg, #323264 61.33%, #323264 16.39%, #7A425E 90.53%);
@@ -59,7 +65,13 @@
 .background{
     background: $background-color;
 }
-
+.nav-center{
+    @media screen and (max-width: 1000px) {
+        margin-left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 25px;
+    }
+}
 
 
 .nav-pills .nav-link{
@@ -72,11 +84,37 @@
     padding-right: 60px;
     font-weight: 600;
     text-align: end;
+    margin: 0px 5px;
+    @media screen and (max-width: 1000px){
+        padding-right: 0px;
+        border-right: none;
+        font-size: 0px;
+        width: 16px;
+        height: 16px;
+        background: #24A3FF;
+        opacity: 0.2;
+        border-radius: 50%;;
+    }
 }
 .nav-pills .nav-link.active{
     color: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);;
     background: transparent;
+
     
+}
+.adaptive-head-text{
+    display: none;
+    @media screen and (max-width: 1000px){
+        display: block;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        color: transparent;    
+	    -webkit-background-clip: text;
+	    background-clip: text;
+	    background-image:  linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    }
 }
 .nav-pills .nav-link.active{
     color: transparent;    
@@ -85,6 +123,24 @@
 	background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
     border-right: 4px solid #F0145A;
     border-radius: 0px;
+    @media screen and (max-width: 1000px){
+        border-right: none;
+        width: 16px;
+        height: 16px;
+        background: #24A3FF;
+        border-radius: 50%;
+        opacity: 1;
+    }
+}
+.flex-drctn{
+    @media screen and (max-width: 1000px){
+        flex-direction: column-reverse;
+    }
+}
+.flex-r{
+    @media screen and (max-width: 1000px){
+        flex-direction: row !important;
+    }
 }
 .tab-content>.tab-pane{
     color: #FFFFFF;
@@ -92,10 +148,16 @@
 .text-header-caruesel-bold{
     font-size: 32px;
     margin: 50px 0px 0px 50px;
+    @media screen and (max-width: 1000px){
+        margin: 20px 0px 0px 0px;
+    }
 }
 .text-header-caruesel{
     font-size: 21px;
     margin: 25px 0px 0px 50px;
+    @media screen and (max-width: 1000px){
+        margin: 25px 0px 0px 0px;
+    }
 }
 .flex-center{
     display: flex;
@@ -145,10 +207,28 @@
 }
 .box-wrap-1{
     display: flex;
-
+    @media screen and (max-width: 750px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.box-1{
+    @media screen and (max-width: 750px){
+       width: 500px;
+    }
+    @media screen and (max-width: 500px){
+        width: 300px;
+     }
+     @media screen and (max-width: 350px){
+        width: 300px;
+     }
 }
 .box-wrap-2{
     display: flex;
+    @media screen and (max-width: 750px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .background-3{
     background: $background-color-3;
@@ -189,6 +269,19 @@
 .carousel-page1{
     background:  #F5F5FA;
     border-radius: 0px 12px 12px 0px;
+    display: flex;
+    @media screen and (max-width: 900px){
+        flex-direction: column-reverse;
+    }
+}
+.portret{
+    @media screen and (max-width: 900px){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
 }
 .team-link-carousel{
     font-weight: 700;
@@ -232,11 +325,15 @@
     padding: 40px 80px 20px 40px;
 }
 .carousel-part-2{
-    padding-left: 40px;
+    @media screen and (max-width:900px) {
+        position: absolute;
+        left: 149px;
+        bottom: 49px;
+    }
 }
 .carousel-indicators{
     position: absolute;
-    top: 515px;
+    bottom: -55px;
 }
 .carousel-indicators [data-bs-target]{
     background: #24A3FF;;
@@ -264,7 +361,7 @@
     "cases-grid-5 cases-grid-6 cases-grid-6  cases-grid-7 ";
     @media screen and (max-width: 900px){
         height: 700px;
-        grid-template-columns: 320px 110px 1fr 1fr ;
+        grid-template-columns:  1fr 1fr ;
         grid-template-rows: 57px 1fr 1fr 1fr;
         grid-template-areas:
         "cases-grid-1 cases-grid-1 cases-grid-3 "
@@ -655,12 +752,25 @@
 .footer_flex{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.flex-2{
+    display: flex;
+    @media screen and (max-width: 750px){
+        flex-direction: column;
+    }
 }
 .footer-link{
     font-weight: 700;
     font-size: 12px;
     color: #24A3FF;
     position: relative;
+    @media screen and (max-width: 750px){
+        margin-top: 10px;
+    }
     &::before{
         content: '';
         display: block;
@@ -671,6 +781,9 @@
         position: absolute;
         left: -17px;
         bottom: 6px;
+        @media screen and (max-width: 750px){
+            display: none;
+        }
     }
     &:hover{
         color: #24A3FF;
@@ -688,6 +801,9 @@
         position: absolute;
         left: -12px;
         bottom: 6px;
+        @media screen and (max-width: 750px){
+            display: none;
+        }
     }
 }
 .dot-fix{
@@ -706,15 +822,27 @@
     font-weight: 400;
     font-size: 16px;
     color: #323264;
+    @media screen and (max-width: 750px){
+        padding-right: 0px;
+    }
 }
+
+
 .footer-number{
     font-weight: 700;
     font-size: 16px;
     color: #46466E;
     padding-right: 47px;
+    @media screen and (max-width: 750px){
+        padding-right: 0px;
+        margin: 15px 0;
+    }
 }
 .footer-img{
     margin-right: 20px;
+    @media screen and (max-width: 750px){
+        margin-right: 0px;
+    }
 }
 .flex-footer-center{
     align-items: center;
@@ -724,11 +852,18 @@
 }
 .footer-padding-bottom{
     padding-bottom: 40px;
+    @media screen and (max-width: 750px){
+        padding-bottom: 0px;
+    }
 }
 .footer-text-license{
     font-weight: 400;
     font-size: 16px;
     color: #B3B3BA;
+    margin-top: 20px;
+    @media screen and (max-width: 750px){
+        padding-bottom: 40px;
+    }
 }
 .footer-border{
     border-top: 4px solid #E6E6F0;

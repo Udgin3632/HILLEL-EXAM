@@ -6,20 +6,25 @@ a{
     }
 }
 .menu-burger{
-    display: block;
-    position: relative;
-    top: 50px;
-    left: 50px;
+    display: none;
+    position: absolute;
+    top: 93px;
+    right: 44px;
     z-index: 1;
     user-select: none;
+    @media screen and (max-width: 750px){
+        display: block;
+    }
 }
 .menu-burger a{
     text-decoration: none;
-    color: #232323;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 .menu-burger a:hover{
-    color: tomato;
+    color: #F0145A;
 }
 .menu-burger input {
     display: block;
@@ -54,7 +59,7 @@ a{
 .menu-burger input:checked ~ .line {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, 0px);
-    background: #232323;
+    // background: #232323;
 }
 .menu-burger input:checked ~ .line:nth-last-child(3){
     opacity: 0;
@@ -65,15 +70,18 @@ a{
 }
 .menu{
     position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
+    width: 600px;
+    margin: -122px 0 0 -490px;
     padding: 50px;
     padding-top: 125px;
-    background: #ededed;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     list-style-type: none;
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -13px 14px 25px 7px rgba(0,0,0,0.31);
 }
 menu li{
     padding: 10px 0px;
@@ -81,6 +89,11 @@ menu li{
 }
 .menu-burger input:checked ~ ul{
     transform: none;
+}
+.burger-text-link{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 
@@ -100,7 +113,11 @@ menu li{
     display: flex;
 }
 .logo-header{
-    margin: 50px 0px;
+    margin: 40px 0px 25px 0px;
+    @media screen and (max-width: 750px){
+        margin: 75px 0px 20px 25px;
+        width: 70%;
+    }
 }
 .header-info{
     padding: 55px 0px 10px 0px;
@@ -108,6 +125,9 @@ menu li{
 .flex-end{
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 750px){
+        display: none;
+    }
 }
 .language{
     padding: 10px;
@@ -118,13 +138,29 @@ menu li{
 .header-margin-left{
     margin-left: 15px;
 }
-
+.lang-block{
+    @media screen and (max-width: 750px){
+        position: absolute;
+        left: 26px;
+        bottom: 98px;
+    }
+}
+.number-block{
+    @media screen and (max-width: 750px){
+        position: absolute;
+        right: 3%;
+        bottom: 98px;
+    }
+}
 .header-number{
     padding: 0px 20px;
     position: relative;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    @media screen and (max-width: 750px){
+        color: #B3B3BA;
+    }
     &::after{
         content: '';
         display: inline-block;
@@ -135,6 +171,9 @@ menu li{
         position: absolute;
         left: 175px;
         top: 7px;
+        @media screen and (max-width: 750px){
+            display: none;
+        }
     }
     &::before{
         content: '';
@@ -146,6 +185,9 @@ menu li{
         position: absolute;
         left: 7px;
         top: 7px;
+        @media screen and (max-width: 750px){
+            display: none;
+        }
     }
 }
 a {
@@ -170,6 +212,9 @@ a {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    @media screen and (max-width: 750px){
+        display: none;
+    }
 }
 .list-style{
     font-size: 18px;
@@ -178,4 +223,7 @@ a {
 .facebook-img-header{
     margin-bottom: 3px;
     display: inline-block;
+    @media screen and (max-width: 750px){
+        display: none;
+    }
 }
