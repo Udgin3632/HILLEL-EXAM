@@ -43,7 +43,7 @@ a{
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    background: #ffffff;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -70,8 +70,8 @@ a{
 }
 .menu{
     position: absolute;
-    width: 600px;
-    margin: -122px 0 0 -490px;
+    width: 380px;
+    margin: -122px 0 0 -300px;
     padding: 50px;
     padding-top: 125px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
@@ -95,7 +95,9 @@ menu li{
     font-size: 36px;
     font-weight: bold;
 }
-
+.li-burger{
+    padding-top: 10px;
+}
 
 
 

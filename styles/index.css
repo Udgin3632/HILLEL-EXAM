@@ -195,7 +195,7 @@ a:hover {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #ffffff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -227,8 +227,8 @@ a:hover {
 
 .menu {
   position: absolute;
-  width: 600px;
-  margin: -122px 0 0 -490px;
+  width: 380px;
+  margin: -122px 0 0 -300px;
   padding: 50px;
   padding-top: 125px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
@@ -254,6 +254,10 @@ menu li {
   color: #ffffff;
   font-size: 36px;
   font-weight: bold;
+}
+
+.li-burger {
+  padding-top: 10px;
 }
 
 .header {
@@ -458,10 +462,14 @@ a.language:hover {
 
 .gradient-background-2 {
   background: linear-gradient(50.01deg, #323264 61.33%, #323264 16.39%, #7A425E 90.53%);
+  position: relative;
 }
 
 .opacity-gradient {
   height: 200px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1000;
   width: 100%;
   background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
   margin: 0;
@@ -500,6 +508,10 @@ a.language:hover {
     transform: translate(-50%, -50%);
     margin-top: 25px;
   }
+}
+
+.background-solid {
+  background: #313264;
 }
 
 .nav-pills .nav-link {
@@ -955,108 +967,108 @@ a.language:hover {
   width: 50%;
   height: 120px;
   background: #1C4280;
-  background-image: url(../img/Hillel-Logo-OneLine-White-Uk.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/Hillel-Logo-OneLine-White-Uk.svg);
 }
 
 .brand-img-2 {
   width: 50%;
   height: 120px;
   background: #143646;
-  background-image: url(../img/image-biz.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/image-biz.svg);
 }
 
 .brand-img-3 {
   width: 50%;
   height: 120px;
   background: #F48B30;
-  background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/logo.svg);
 }
 
 .brand-img-4 {
   width: 50%;
   height: 120px;
   background: #9E4DC3;
-  background-image: url(../img/retina_2.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/retina_2.svg);
 }
 
 .brand-img-5 {
   width: 50%;
   height: 120px;
   background: #FD9339;
-  background-image: url(../img/Frame.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/Frame.svg);
 }
 
 .brand-img-6 {
   width: 50%;
   height: 120px;
   background: #E2E2E4;
-  background-image: url(../img/Frame-2.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/Frame-2.svg);
 }
 
 .brand-img-7 {
   width: 50%;
   height: 120px;
   background: #C71C36;
-  background-image: url(../img/Group.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/Group.svg);
 }
 
 .brand-img-8 {
   width: 50%;
   height: 120px;
   background: #DCF3F9;
-  background-image: url(../img/ecolease.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/ecolease.svg);
 }
 
 .brand-img-9 {
   width: 50%;
   height: 120px;
   background: #EAEAEA;
-  background-image: url(../img/image.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/image.svg);
 }
 
 .brand-img-10 {
   width: 50%;
   height: 120px;
   background: #282240;
-  background-image: url(../img/icon-logo.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/icon-logo.svg);
 }
 
 .brand-img-11 {
   width: 50%;
   height: 120px;
   background: #1D4568;
-  background-image: url(../img/logo-2.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/logo-2.svg);
 }
 
 .brand-img-12 {
   width: 50%;
   height: 120px;
   background: #000000;
-  background-image: url(../img/logoM.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/logoM.svg);
 }
 
 .card-brand {
@@ -1078,12 +1090,15 @@ a.language:hover {
   background: #F5F5FA;
 }
 
-.services-link-2 {
+a.services-link-2 {
   color: #24A3FF;
   opacity: 1;
   position: relative;
 }
-.services-link-2::after {
+a.services-link-2:hover {
+  color: #24A3FF;
+}
+a.services-link-2::after {
   content: "";
   display: inline-block;
   background-image: url(../img/Vector_blue.svg);

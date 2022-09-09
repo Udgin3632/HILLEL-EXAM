@@ -33,9 +33,13 @@
 }
 .gradient-background-2{
     background:  linear-gradient(50.01deg, #323264 61.33%, #323264 16.39%, #7A425E 90.53%);
+    position: relative;
 }
 .opacity-gradient{
     height: 200px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1000;
     width: 100%;
     background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
     margin: 0;
@@ -74,6 +78,9 @@
 }
 
 
+.background-solid{
+    background: #313264;
+}
 .nav-pills .nav-link{
     color: #B3B3BA;
     background: transparent;
@@ -477,75 +484,50 @@
 .brand-img-1{
     @include img-background (#1C4280);
     background-image: url(../img/Hillel-Logo-OneLine-White-Uk.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
 }
 .brand-img-2{
     @include img-background (#143646);
     background-image: url(../img/image-biz.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-3{
     @include img-background (#F48B30);
     background-image: url(../img/logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-4{
     @include img-background (#9E4DC3);
     background-image: url(../img/retina_2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-5{
     @include img-background (#FD9339);
     background-image: url(../img/Frame.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-6{
     @include img-background (#E2E2E4);
     background-image: url(../img/Frame-2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-7{
     @include img-background (#C71C36);
     background-image: url(../img/Group.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-8{
     @include img-background (#DCF3F9);
     background-image: url(../img/ecolease.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-9{
     @include img-background (#EAEAEA);
     background-image: url(../img/image.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-10{
     @include img-background (#282240);
     background-image: url(../img/icon-logo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-11{
     @include img-background (#1D4568);
     background-image: url(../img/logo-2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brand-img-12{
     @include img-background (#000000);
     background-image: url(../img/logoM.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .card-brand{
@@ -564,10 +546,13 @@
 .background-grey{
     background: $background-grey;
 }
-.services-link-2{
+a.services-link-2{
     color: #24A3FF;
     opacity: 1; 
     position: relative;
+    &:hover{
+        color: #24A3FF;
+    }
     &::after{
        content: '';
        display: inline-block;
