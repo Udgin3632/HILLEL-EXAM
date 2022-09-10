@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../services-pages/service-style/services-style.css">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="header">
+        <div style="background: #323264;">
+            <div class="conteiner">
+                <div class="header-flex">
+                    <a href="../../index.html">
+                        <div class="flex-start">
+                            <img class="logo-header" src="../../img/LogoMin.svg" alt="">
+
+                        </div>
+                    </a>
+                    <div class="cookie-block">
+                        <img class="cookie-img" src="../../img/Group4_serv.svg" alt="">
+                    </div>
+
+                    <div>
+                        <div class="flex header-info">
+                            <div class="lang-block">
+                                <a onclick="return false" class="language active-lang" href="#">УК</a>
+                                <a onclick="return false" class="language" href="#">РУ</a>
+                                <a onclick="return false" class="language" href="#">EN</a>
+                            </div>
+                            <div class="header-margin-left flex">
+                                <a onclick="return false" class="address-header" href="#">Одеса, Адміральський пр.,
+                                    3</a>
+                                <div class="number-block">
+                                    <a onclick="return false" class="header-number" href="tel:+38 (050) 390 15 91">+38
+                                        (050) 390 15 91</a>
+                                </div>
+                                <a class="facebook-img-header" href="#"><img src="../../img/Vector.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <nav>
+                            <div class="menu-burger">
+                                <input type="checkbox">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <ul class="menu">
+                                    <li class="li-burger"><a class="burger-text-link" href="#">о нас</a></li>
+                                    <li class="li-burger"><a href="#">послуги</a></li>
+                                    <li class="li-burger"><a href="#">команда</a></li>
+                                    <li class="li-burger"><a href="#">публікації</a></li>
+                                    <li class="li-burger"><a href="#">контакти</a></li>
+                                </ul>
+                            </div>
+                            <ul class="flex-end">
+                                <li class="list-padding list-style"><a href="#">о нас</a></li>
+                                <li class="list-padding list-style"><a
+                                        style="border-bottom: 2px solid white; padding-bottom: 2px;"
+                                        href="#">послуги</a></li>
+                                <li class="list-padding list-style"><a href="#">команда</a></li>
+                                <li class="list-padding list-style"><a href="#">публікації</a></li>
+                                <li class="list-padding list-style"><a href="#">контакти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+    <section style="position: relative; top: 105px;" class="background-3">
+        <div class="conteiner">
+            <div class="flex-services">
+                <img style="padding-top: 40px;" class="box-img" src="../../img/Icon.png" alt="">
+                <p style="padding-bottom: 25px;" class="description center-text">IT та електронна комеція</p>
+                <p class="services-text">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні
+                    <br class="disp-none"> папери — юридична
+                    робота відволікає вас від ведення бізнесу. Але роботи не так вже й <br class="disp-none"> багато,
+                    щоб наймати
+                    інхауз-юриста.
+                <p class="services-text text-padding-top">До того ж, з часом робота стане однотипною і нецікавою для
+                    штатного юриста. А ще ми <br class="disp-none"> добре знаємо, як
+                    важко в Україні знайти хорошого кандидата з досвідом у сфері <br class="disp-none"> інформаційних
+                    технологій.</p>
+            </div>
+            <div class="flex-center padding-popup">  
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-popup" data-toggle="modal" data-target="#exampleModalCenter">
+                    Безкоштовна консультація
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade popup-background" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content popup-style">
+                            <div class="modal-header header-popup">
+                                <h5 class="modal-title popup-title" id="exampleModalLongTitle">Ми хотіли б Вам допомогти</h5>
+                                <button type="button" class="close close-popup" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true"><div class="line-close line-close-1"></div> <div class="line-close line-close-2"></div></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-main">
+                                    <form class="form" action="#">
+                                        <input class="input-text-popup" type="text" placeholder="Iм’я">
+                                        <input class="input-text large-input" type="text" placeholder="Повідомлення">
+                                        <div class="popup-flex"><p class="popup-text">Як вам відповісти?</p></div>
+                                        <input class="input-text-popup" type="number" placeholder="Номер телефона">
+                                        <input class="input-text-popup" type="email" placeholder="Чи email">
+                                        <button class="btn-popup ">Надіслати запит</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-btn-block">
+                
+
+                <div class="services-border">
+                    <div>
+                        <p class="services-text-main">Послуги цього напрямку:</p>
+                        <div class="flex-services-2">
+                            <div class="services-block">
+                                <p class="services-list">супровід інвестиційних проектів з розвитку портової
+                                    інфраструктури;
+                                </p>
+                                <p class="services-list">паспортизація ГТС, внесення інформації про них в
+                                    обов'язкові бази
+                                    даних і реєстри;</p>
+                                <p class="services-list">оформлення дозвільної документації для будівництва портових
+                                    терміналів; </p>
+                                <p class="services-list">оформлення дозвільної та іншої обов'язкової документації,
+                                    необхідної для здійснення
+                                    діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</p>
+                            </div>
+                            <div class="services-block">
+                                <p class="services-list">супровід процедур, пов'язаних з орендою державного майна в
+                                    порту;
+                                </p>
+                                <p class="services-list">супровід процедур, пов'язаних з підтвердженням статусу
+                                    портового
+                                    оператора, морського
+                                    агента,
+                                    лінії закордонного плавання; </p>
+                                <p class="services-list"> супровід процедур, пов'язаних з включенням компанії в межі
+                                    порту;
+                                </p>
+                                <p class="services-list">оскарження дій, пов'язаних з незаконним нав'язуванням
+                                    послуг в
+                                    порту
+                                    компаніями-монополістами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <section class="conteiner">
+        <div style="margin-top: 150px;" class="cases">
+            <div class="cases-grid-1">
+                <p class="cases-head">Успішні кейси</p>
+            </div>
+            <div class="cases-grid-2">
+                <a onclick="return false" href="#">
+                    <p class="cases-info">Супровід проекту з <br> купівлі-продажу <br> сільськогосподарської продукції
+                    </p>
+                    <p class="cases-info-name">Hillel IT School</p>
+                </a>
+            </div>
+            <div class="cases-grid-3">
+                <a onclick="return false" href="#">
+                    <p class="cases-info">Підготовка комплексного <br> юридичного висновку для <br> європейського банку
+                        <br>
+                        <span class="cases-info-name">WannaBiz</span>
+                    </p>
+                </a>
+            </div>
+            <div class="cases-grid-4">
+                <a onclick="return false" href="#">
+                    <p class="cases-info">Супровід проекту з <br> купівлі-продажу <br> сільськогосподарської
+                        продукції<br>
+                        <span class="cases-info-name">tapgerine</span>
+                    </p>
+                </a>
+            </div>
+            <div class="cases-grid-5">
+                <a onclick="return false" href="#">
+                    <p class="cases-info cases-info-5">Представництво <br> інтересів великого <br> зернотрейдера в <br>
+                        податковому спорі</p>
+                    <p class="cases-info-name">3D LOOK</p>
+                </a>
+            </div>
+            <div class="cases-grid-6">
+                <a onclick="return false" href="#">
+                    <p class="cases-info">Оскарження податкових <br> повідомлень-рішень ДФС <br> <span
+                            class="cases-info-name">WannaBiz</span></p>
+                </a>
+            </div>
+            <div class="cases-grid-7">
+                <a onclick="return false" href="#">
+                    <p class="cases-info">Супровід проекту з кредитування <br> агротрейдерів мальтійським банком <br>
+                        <span class="cases-info-name">WannaBiz</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section style="top: 70px;" class="background-grey cards">
+        <div class="conteiner">
+            <div class="padding-top-2">
+                <div class="margin-left-cards">
+                    <a onclick="return false" onclick="return false" class="services-link-2" href="#">Публікації</a>
+                    <p class="description">Нам э що розказати</p>
+                </div>
+                <div class="flex-cards flex-center-card">
+                    <div class="col1 margin-right-services">
+                        <a onclick="return false" class="card-main-page-link" href="#">
+                            <div class="card-main-page disp-none  padding-card-1">
+                                <p class="services-link-2 image-none">Валютний контроль помер, хай живе <br> валютний
+                                    контроль!
+                                </p>
+                                <p class="card-date">14 червня</p>
+                                <div class="line"></div>
+                                <p class="card-text">Експерти проводять конференції, круглі столи та <br> іншого штибу
+                                    заходи на
+                                    тему «лібералізація <br> валютного законодавства». <br> Юристи-експерти-новелісти
+                                    стирають
+                                    пальці об <br> «ctrl+c/ctrl+v».</p>
+                            </div>
+                        </a>
+                        <a onclick="return false" class="card-main-page-link" href="#">
+                            <div class="card-main-page ">
+                                <img class="card-image" src="../../img/image-4.png" alt="">
+                                <div class="padding-card">
+                                    <p class="services-link-2 image-none">Заповіт міленіала</p>
+                                    <p class="card-date">19 серпня</p>
+                                    <div class="line"></div>
+                                    <p class="card-text">Що і як передаватимуть у спадщину сучасні <br> влогери, опініон
+                                        лідери і криптомільйонери <br> Типовий спадок українського покоління Х <br>
+                                        виглядає так: квартира у…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col2 margin-right-services">
+                        <a onclick="return false" class="card-main-page-link" href="#">
+                            <div class="card-main-page adaptive-700  padding-card-1">
+                                <p class="services-link-2 image-none">Валютний контроль помер, хай живе <br> валютний
+                                    контроль!
+                                </p>
+                                <p class="card-date">14 червня</p>
+                                <div class="line"></div>
+                                <p class="card-text">Експерти проводять конференції, круглі столи та <br> іншого штибу
+                                    заходи на
+                                    тему «лібералізація <br> валютного законодавства». <br> Юристи-експерти-новелісти
+                                    стирають
+                                    пальці об <br> «ctrl+c/ctrl+v».</p>
+                            </div>
+                        </a>
+                        <a onclick="return false" class="card-main-page-link" href="#">
+                            <div class="card-main-page ">
+                                <img class="card-image" src="../../img/image-2.png" alt="">
+                                <div class="padding-card">
+                                    <p class="services-link-2 image-none">Equity associate</p>
+                                    <p class="card-date">22 квітня</p>
+                                    <div class="line"></div>
+                                    <p class="card-text">На проектах я джун. При цьому я співвласник <br> юридичної
+                                        фірми.
+                                        Як це відбулося. Перед вступом <br> батьки мені казали, що якщо буду…</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a onclick="return false" class="card-main-page-link disp-none" href="#">
+                            <div class="image-5"><img src="../../img/image-5.png" alt=""></div>
+                        </a>
+                    </div>
+
+                    <div class="card-3">
+                        <a onclick="return false" class="card-main-page-link" href="#">
+                            <div class="card-main-page">
+                                <img class="card-image" src="../../img/image-3.png" alt="">
+                                <div class="padding-card">
+                                    <p class="services-link-2 image-none">Штраф для «Корпорації добра»: що буде з <br>
+                                        Google та іншими за порушення GDPR</p>
+                                    <p class="card-date">29 вересня</p>
+                                    <div class="line"></div>
+                                    <p class="card-text">І чому стягнення у 50 млн євро може стати <br> доленосним
+                                        прецедентом За матеріалами <br> Mind.ua 21 січня Національна комісія із захисту
+                                        <br>
+                                        даних.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a onclick="return false" class="card-main-page-link" href="#">
+                            <div class="image-6"><img src="../../img/image-6.png" alt=""></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="white-gradient"></div>
+            <a onclick="return false" class="button-publications" href="#">Ще публікації</a>
+    </section>
+
+
+
+    <section class="background-grey footer-margin">
+        <div class="conteiner">
+            <div class="footer_flex footer-border">
+                <div>
+                    <div class="flex-2 flex-footer-center footer-padding">
+                        <p class="footer-text">Одеса, Адміральський пр., 3</p>
+                        <a onclick="return false" class="footer-link spacing" href="#">Подивитися на мапі</a>
+                    </div>
+                    <div class="flex-2 flex-footer-center footer-padding-bottom">
+                        <a class="footer-img" href="#"><img src="../../img/Vector_face.svg" alt=""></a>
+                        <p class="footer-number dot dot-fix"> +38 (050) 390 15 91</p>
+                        <a onclick="return false" class="footer-link dot"
+                            href="mailto:contact@hlegals.net">contact@hlegals.net</a>
+                    </div>
+
+                </div>
+
+                <div>
+                    <p class="footer-text-license">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

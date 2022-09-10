@@ -8,11 +8,11 @@ a{
 .menu-burger{
     display: none;
     position: absolute;
-    top: 93px;
+    top: 78px;
     right: 44px;
     z-index: 1;
     user-select: none;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         display: block;
     }
 }
@@ -71,7 +71,7 @@ a{
 .menu{
     position: absolute;
     width: 380px;
-    margin: -122px 0 0 -300px;
+    margin: -122px 0 0 -265px;
     padding: 50px;
     padding-top: 125px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
@@ -108,26 +108,36 @@ menu li{
     z-index: 1000;
 }
 .header-flex{
+    position: relative;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1350px){
+        justify-content: space-around;
+    }
+    @media screen and (max-width: 1050px){
+        justify-content: space-between;
+    }
 }
 .flex{
     display: flex;
 }
 .logo-header{
-    margin: 40px 0px 25px 0px;
-    @media screen and (max-width: 750px){
+    margin: 25px 0px 25px 0px;
+    @media screen and (max-width: 1350px){
+        width: 75%;
+    }
+    @media screen and (max-width: 1050px){
         margin: 75px 0px 20px 25px;
-        width: 70%;
+        width: 60%;
     }
 }
 .header-info{
-    padding: 55px 0px 10px 0px;
+    padding: 30px 0px 10px 0px;
 }
 .flex-end{
     display: flex;
     justify-content: flex-end;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         display: none;
     }
 }
@@ -141,14 +151,14 @@ menu li{
     margin-left: 15px;
 }
 .lang-block{
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         position: absolute;
         left: 26px;
         bottom: 98px;
     }
 }
 .number-block{
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         position: absolute;
         right: 3%;
         bottom: 98px;
@@ -160,7 +170,7 @@ menu li{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         color: #B3B3BA;
     }
     &::after{
@@ -173,7 +183,7 @@ menu li{
         position: absolute;
         left: 175px;
         top: 7px;
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 1050px){
             display: none;
         }
     }
@@ -187,7 +197,7 @@ menu li{
         position: absolute;
         left: 7px;
         top: 7px;
-        @media screen and (max-width: 750px){
+        @media screen and (max-width: 1050px){
             display: none;
         }
     }
@@ -214,7 +224,7 @@ a {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         display: none;
     }
 }
@@ -225,7 +235,34 @@ a {
 .facebook-img-header{
     margin-bottom: 3px;
     display: inline-block;
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 1050px){
         display: none;
+    }
+}
+.cookie-img{
+    @media screen and (max-width: 1350px){
+        width: 70%;
+    }
+
+    @media screen and (max-width: 500px){
+        width: 55%;
+    }
+}
+.cookie-block{
+    position: absolute;
+    left: 164px;
+    bottom: 45px;
+    width: 200px;
+    @media screen and (max-width: 1350px){
+        bottom: 49px;
+        left: 21%;
+    }
+    @media screen and (max-width: 1050px){
+        bottom: 34px;
+        left: 139px;
+
+    }
+    @media screen and (max-width: 500px){
+        bottom: 37px;
     }
 }
