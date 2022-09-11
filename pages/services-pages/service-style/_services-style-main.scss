@@ -1,3 +1,14 @@
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body{
+    line-height: 1.5;
+    font-size: 16px;
+
+}
 .flex-services{
     display: flex;
     flex-direction: column;
@@ -211,4 +222,7 @@ input::placeholder {
 .padding-popup{
     padding-top: 40px;
     padding-bottom: 60px;
+}
+.footer-margin-services{
+    margin-top: 70px;
 }
