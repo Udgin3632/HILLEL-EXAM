@@ -36,4 +36,7 @@ $main-conteiner: 1320px;
     border-radius: 8px;
     padding-left: 20px;
     width: 487px;
+    @media screen and (max-width: 500px){
+        max-width: 90%;
+    }
  }
