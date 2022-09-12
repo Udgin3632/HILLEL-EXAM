@@ -473,6 +473,45 @@ a.language:hover {
   }
 }
 
+.header-service {
+  position: fixed;
+  width: 100%;
+  z-index: 1100;
+}
+
+.img-service-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 85vh;
+  z-index: 1000;
+}
+
+.img-background {
+  background: #323264;
+  width: 100%;
+  height: 113px;
+  z-index: 900;
+  position: fixed;
+}
+@media screen and (max-width: 1050px) {
+  .img-background {
+    height: 135px;
+  }
+}
+
+.background-4 {
+  background-image: url(../img/Cover.png);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1000;
+  position: relative;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -757,6 +796,7 @@ input::placeholder {
 
 .popup-background {
   background: rgba(50, 50, 100, 0.7);
+  z-index: 20000;
 }
 
 .padding-popup {
@@ -766,4 +806,19 @@ input::placeholder {
 
 .footer-margin-services {
   margin-top: 70px;
+}
+
+.modal-backdrop.in {
+  z-index: 999;
+  opacity: 0;
+}
+
+.switch {
+  width: 260px;
+  height: 40px;
+  background: #E6E6F0;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=services-style.css.map */
