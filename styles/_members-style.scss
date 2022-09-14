@@ -1,0 +1,113 @@
+.member-flex{
+    display: flex;
+    margin: 0% 5%;
+    @media screen and (max-width: 1000px){
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.margin-right-photo{
+    margin-right: 5%;
+}
+.member-header-text{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    @media screen and (max-width: 1000px){
+        margin: 0px;
+    }
+}
+.member-text-grey{
+    font-size: 16px;
+    color: #B3B3BA;
+}
+.member-text-link{
+    font-weight: 400;
+    font-size: 16px;
+    color: #24A3FF;
+}
+.border-grey-member{
+    border-bottom: 4px solid #E6E6F0;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+    }
+}
+.member-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.member-text-bold{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    font-size: 14px;
+    font-weight: bold;
+}
+.member-conteiner{
+    width: 45em;
+    @media screen and (max-width: 1000px){
+        width: 100%;
+    }
+}
+.margin-member-1{
+    margin-top: 40px;
+}
+.margin-member-2{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.margin-member-3{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.margin-member-side{
+    margin: 0px 30px;
+    @media screen and (max-width: 1000px){
+        margin: 20px 0px;
+    }
+}
+.member-dot{
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #E6E6F0;
+        position: absolute;
+        left: -16px;
+        bottom: 8px;
+        @media screen and (max-width: 1000px){
+            display: none;
+        }
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #E6E6F0;
+        position: absolute;
+        left: 128px;
+        bottom: 8px;
+        @media screen and (max-width: 1000px){
+            display: none;
+        }
+    }
+}
+.member-img{
+    @media screen and (max-width: 500px){
+        width: 90%;
+    }
+}
