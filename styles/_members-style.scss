@@ -30,6 +30,9 @@
     font-weight: 400;
     font-size: 16px;
     color: #24A3FF;
+    &:hover{
+        color: #24A3FF;
+    }
 }
 .border-grey-member{
     border-bottom: 4px solid #E6E6F0;
@@ -109,5 +112,112 @@
 .member-img{
     @media screen and (max-width: 500px){
         width: 90%;
+    }
+}
+.member-head{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 42px;
+    line-height: 50px;
+    padding-top: 160px;
+    width: 63%;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1050px){
+    
+        margin-left: 10px;
+        margin-right: 0px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    @media screen and (max-width: 500px){
+        font-size: 24px;
+        line-height: 24px;
+        width: 95%;
+    }
+}
+.member-name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #323264;
+}
+.member-work{
+    color: #B3B3BA;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    @media screen and (max-width: 700px){
+        margin: 20px 0px;
+    }
+}
+.member-flex-maim-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    @media screen and (max-width: 1250px){
+        padding: 0px 20px;
+        
+    }
+    @media screen and (max-width: 700px){
+        flex-direction: column;
+        justify-content: end;
+        width: 135px;
+        padding: 0px 10px;
+        align-items: baseline;
+    }
+
+}
+
+.member-block{
+    width: fit-content;
+    @media screen and (max-width: 700px){
+        display: flex;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    @media screen and (max-width: 500px){
+        margin: 10px 0px;
+    }
+}
+.member-conteiner-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    @media screen and (max-width: 700px){
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}
+.member-conteiner-flex-reversre{
+    @media screen and (max-width: 700px){
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+    
+}
+.member-main-img{
+    width: 100%;
+    @media screen and (max-width: 1250px){
+        padding: 0px 10px;
+    }
+    @media screen and (max-width: 700px){
+        width: 300px;
+    }
+    @media screen and (max-width: 500px){
+        width: 250px;
+    }
+    @media screen and (max-width: 400px){
+        width: 150px;
+    }
+}
+.member-disp-none{
+    @media screen and (max-width: 700px){
+        display: none;
     }
 }
