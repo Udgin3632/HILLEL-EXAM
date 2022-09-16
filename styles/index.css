@@ -696,6 +696,9 @@ a.list-style-blue {
   font-size: 21px;
   color: #24A3FF;
 }
+.contact-mail:hover {
+  color: #24A3FF;
+}
 
 .contact-facebook {
   letter-spacing: 1px;
