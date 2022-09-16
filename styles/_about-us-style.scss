@@ -1,0 +1,194 @@
+.about-us-main-text{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 42px;
+    line-height: 50px;
+    position: relative;
+}
+.about-us-text{
+    font-size: 21px;
+    line-height: 30px;
+}
+.about-us-description{
+    font-size: 18px;
+    line-height: 21px;
+    color: #323264;
+}
+.about-us-flex{
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 1000px){
+        flex-direction: column;
+    }
+}
+.text-block{
+    width: 640px;
+    margin: 0px 20px;
+    @media screen and (max-width: 1000px){
+        width: 100%;
+    }
+}
+.border-bottom-us{
+    @media screen and (max-width: 1000px){
+        border-bottom: 4px solid #E6E6F0;
+        padding-bottom: 30px;
+    }
+}
+
+.text-block-margin{
+    margin: 50px;
+}
+
+.about-us-before{
+    &::before{
+        content: '';
+        display: inline-block;
+        background-image: url(../img/Experience.png);
+        margin-left: 5px;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        left: -50px;
+        background-repeat: no-repeat;
+    }
+}
+.about-us-before-2{
+    &::before{
+        content: '';
+        display: inline-block;
+        background-image: url(../img/Clients.png);
+        margin-left: 5px;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        left: -50px;
+        background-repeat: no-repeat;
+    }
+}
+.about-us-before-3{
+    &::before{
+        content: '';
+        display: inline-block;
+        background-image: url(../img/Pro\ bono.png);
+        margin-left: 5px;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 10px;
+        left: -50px;
+        background-repeat: no-repeat;
+    }
+}
+.about-us-border{
+    border-left: 4px solid #E6E6F0;
+    padding-left: 30px;
+    @media screen and (max-width: 1000px){
+        padding-top: 30px;
+        border-left: none;
+    }
+}
+.padding-about-us{
+    padding: 35px 0px;
+}
+.margin-left-about-us{
+    margin-left: 40px;
+}
+.padding-about-us-bottom{
+    padding-bottom: 75px;
+}
+.img-about-us{
+    transform: translate(0%,50%);
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/image-team.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+.block-img-us{
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-img-about-us{
+    position: absolute;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    color: #FFFFFF;
+    font-size: 96px;
+    line-height: 113px;
+    text-align: center;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    @media screen and (max-width: 1000px){
+        font-size:70px;
+    }
+    @media screen and (max-width: 800px){
+        font-size:50px;
+        letter-spacing: 50px;
+    }
+    @media screen and (max-width: 700px){
+        font-size:40px;
+        letter-spacing: 40px;
+    }
+    @media screen and (max-width: 500px){
+        font-size:30px;
+        letter-spacing: 30px;
+    }
+}
+.img-brand{
+    max-width: 100%;
+}
+.flex-us{
+    display: flex;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 16px;
+    height: 16px;
+    background: #24A3FF;
+    opacity: 0.2;
+
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #24A3FF;
+    opacity: 1;
+}
+.text-us-bolt{
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 30px 0px   ;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    padding : 15px 0px;
+}
+.owl-carousel .owl-item img {
+    width: 300px;
+    padding: 0px 20px;
+    @media screen and (max-width: 1400px){
+        width: 100%;
+    }
+}
+.disp-none-us{
+    @media screen and (max-width: 1000px){
+        display: none;
+    }
+}
+.aline-center-us{
+    @media screen and (max-width: 1000px){
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+}
