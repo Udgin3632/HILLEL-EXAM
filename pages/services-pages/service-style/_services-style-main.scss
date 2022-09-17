@@ -74,7 +74,7 @@ body{
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background: #F0145A;;
+        background: $pink;
         position: absolute;
         left: 2px;
         margin-top: 14px;
@@ -132,7 +132,7 @@ body{
 }
 .popup-title{
     font-size: 32px;
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: $pink-color-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -142,14 +142,14 @@ body{
 
 }
 button.close{
-    color: #F0145A;
+    color: $pink;
     opacity: 1;
     
 }
 .line-close{
     width: 2px;
     height: 30px;
-    background: #F0145A;
+    background: $pink;
 }
 .line-close-1{
     transform: rotate(45deg) translate(3px, 22px);

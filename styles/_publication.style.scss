@@ -75,7 +75,7 @@ a.list-style-blue{
     color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
-	background-image:  linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+	background-image:  $pink-color-gradient;
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
@@ -91,7 +91,7 @@ a.list-style-blue{
     padding: 12px 0px;
 }
 .nunber-color{
-    color: #F0145A;
+    color: $pink;
     font-weight: 600;
     margin-left: 10px;
 }

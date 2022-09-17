@@ -11,7 +11,7 @@
     margin-right: 5%;
 }
 .member-header-text{
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: $pink-color-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -115,7 +115,7 @@
     }
 }
 .member-head{
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: $pink-color-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

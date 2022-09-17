@@ -14,6 +14,9 @@
     font-size: 21px;
     line-height: 30px;
     color: #323264;
+    @media screen and (max-width: 900px){
+        margin-top: 50px;
+    }
 }
 .flex-contact{
     display: flex;
@@ -53,7 +56,7 @@
     }
 }
 .popup-header-contact{
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    background: $pink-color-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
